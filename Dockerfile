@@ -1,11 +1,13 @@
+# Stage 1: Build the site in a clean Node.js environment
 FROM node:22-slim AS builder
-WORKDIR /usr/src/app
-COPY package.json .
-COPY package-lock.json* .
-RUN npm ci
-
-FROM node:22-slim
-WORKDIR /usr/src/app
-COPY --from=builder /usr/src/app/ /usr/src/app/
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
 COPY . .
-CMD ["npx", "quartz", "build", "--serve"]
+RUN npx quartz build
+
+# Stage 2: Serve the built site with a lightweight NGINX server
+FROM nginx:stable
+COPY --from=builder /app/public /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
