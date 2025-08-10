@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  baena-blog:
+    build: .
+    container_name: baena-blog
+    restart: unless-stopped
+    networks:
+      - nas-network
+    ports:
+      - "8086:80"
+    environment:
+      - TZ=Europe/Kyiv
+
+networks:
+  nas-network:
+    external: true
