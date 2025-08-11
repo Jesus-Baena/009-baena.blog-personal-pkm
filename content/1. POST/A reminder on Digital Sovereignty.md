@@ -1,6 +1,6 @@
 ---
-title: Advanced
-draft:
+title: A reminder on Digital Sovereignty
+draft: false
 tags:
   - tech
 ---
