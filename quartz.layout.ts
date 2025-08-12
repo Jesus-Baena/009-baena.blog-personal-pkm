@@ -39,7 +39,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // Hide the "00. STOCK" folder from the explorer
+        return node.displayName !== "00. STOCK"
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -63,7 +68,12 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // Hide the "00. STOCK" folder from the explorer
+        return node.displayName !== "00. STOCK"
+      },
+    }),
   ],
   right: [],
 }
