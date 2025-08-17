@@ -36,7 +36,7 @@ export default {
       title: "Explorer",
     },
     footer: {
-      createdWith: "Created with",
+  createdWith: "Created by Jesus Baena with Quartz v4.5.1 © 2025",
     },
     graph: {
       title: "Graph View",

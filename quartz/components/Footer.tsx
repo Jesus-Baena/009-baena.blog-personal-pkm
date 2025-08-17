@@ -9,8 +9,10 @@ interface Options {
 
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-    const year = new Date().getFullYear()
-    const links = opts?.links ?? []
+    const links = {
+      Email: "mailto:jesus@jbaena.net",
+      ...(opts?.links ?? {})
+    }
     return (
       <footer class={`${displayClass ?? ""}`}>
         <ul>
@@ -21,8 +23,7 @@ export default ((opts?: Options) => {
           ))}
         </ul>
         <p class="quartz-attribution">
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          {i18n(cfg.locale).components.footer.createdWith}
         </p>
       </footer>
     )

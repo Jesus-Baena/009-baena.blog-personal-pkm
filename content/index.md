@@ -8,12 +8,8 @@ If you're interested in my professional work, my portfolio at [jbaena.net](https
 ---
 ###### **[[1. POSTs]]** 
 A general collection of my self-contained thoughts, spanning a wide variety of topics and categories. This is the *bloggy* part of this site. 
-###### **[[2. TECH]]**
-A repository of technical notes and reminders about the tools I use. You might find a helpful tutorial or solution for a problem you're facing.
-###### **[[3. PROJECTS]]**
-Follow the development of my current projects here. You can find the finished work at [jbaena.net](https://jbaena.net), but this is where I share the inner workings and processes for you to explore and adapt.
-###### **[[4. INTERNET]]**
-This section serves as my personal dashboard for tracking and consolidating my online presence.
+###### **[[2. TECH]]**, **[[3. PROJECTS]]**, **[[4. INTERNET]]**
+This spaces serves as a dynamic repository for my work and digital presence. Here, you'll find a collection of my technical notes and tutorials, offering potential solutions to challenges you might be facing. It also provides a look into the inner workings and development processes of my current projects, with the finished pieces accessible [at jbaena.net](https://jbaena.net)
 
 ---
 
