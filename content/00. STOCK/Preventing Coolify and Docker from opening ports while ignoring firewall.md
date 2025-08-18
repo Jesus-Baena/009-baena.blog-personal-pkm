@@ -68,6 +68,8 @@ You have to edit the `docker-compose.prod.yml` file **to add the `127.0.0.1` bin
 
 5.  Leave the `expose:` section completely unchanged.
 
+![[Screenshot 2025-08-18 091255.png]]
+
 6. Same applies for the port mappings for the real-time service 
 
 ```
