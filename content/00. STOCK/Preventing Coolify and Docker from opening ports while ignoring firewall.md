@@ -1,11 +1,11 @@
 ---
-title: The problem with Coolify and docker opening ports
+title: Preventing Coolify and Docker from opening ports while ignoring firewall
 draft:
 tags:
 ---
 
 ## The problem. 
-By default docker will open ports ignoring the *internal* server firewall rules (such as ufw). Typical solution is to set *external* firewall rules through your VPS provider. But some providers do not offer this type of protection (or they charge you handsomely for it).
+By default Docker will open ports ignoring the *internal* server firewall rules (such as *ufw*). Typical solution is to set *external* firewall rules through your VPS provider. But some providers do not offer this type of protection (or they charge you handsomely for it).
 
 ![[Pasted image 20250818084633.png]]
 
@@ -57,7 +57,7 @@ You have to edit the `docker-compose.prod.yml` file **to add the `127.0.0.1` bin
     ```
 
 
-> [!NOTE] Title
+> [!NOTE] Using Tailscale
 > If you prefer to access your Coolify instance through a mesh VPN such as [[Tailscale]] (my recommendation), you have to add this line: 
 > 
 ```
@@ -96,5 +96,6 @@ ports:
 
     ```bash
 docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --force-recreate
+
     ```
 
