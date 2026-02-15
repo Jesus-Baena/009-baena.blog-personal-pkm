@@ -1,11 +1,12 @@
 ---
 title: Project snapshot - Humanitarian Jobs Dashboard
-description: A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for enterprise clients.
+description: A real-time business intelligence dashboard processing hundred of thousand of data points daily to provide insights on humanitarian jobs.
 date: 2025-02-13
 lastUpdated: 2026-01-14
 tags:
   - AI
   - DataAnalysis
+  - "#BusinessIntelligence"
 status: Production
 briefing: "[[HUMANITARIAN JOBS DASHBOARD briefing]]"
 link: https://baena.ai/demos/reliefjobs-dashboard
@@ -91,6 +92,32 @@ To build a sovereign, AI-powered intelligence platform that monitors the ReliefW
 
 - [[Map of Jobs Density]]
 
+- [[Opportunities by Experience Level]]
+
+- [[Average Job Posting Duration (days)]]
+
+- [[Average Time to Hire (days)]]
+
+- [[Job vs. Consultancy]]
+
+- [[Experience Level Trends]]
+
+- [[Job vs. Consultancy Posting Trends]]
+
+- [[Job Postings per Month]]
+
+- [[Total Count of Posts]]
+
+- [[Map of Density of Jobs]]
+
+- [[Percentage of Positions Nationalized]]
+
+- [[Most Demanded Languages]]
+
+- [[Project-based or Long-term]]
+
+- [[Last Post Recorded]]
+
 </div>
 
 
@@ -103,5 +130,10 @@ ReliefWeb’s API is very friendly but requires an `appname` parameter in every 
 `https://api.reliefweb.int/v2/jobs?appname=my-humanitarian-dashboard&limit=1000&preset=latest`
 
 > [!UPDATE]
-> With all the agents bots scraping the Internet automatically, APIs are gearing up their security and putting more restrictions. This call stopped working and I had to adjust every parameter for the connection not to abort. I am now doing requests of 50 profiles at a time. *2026-01-06*
+> With all the agents bots scraping the Internet automatically, APIs are gearing up their security and putting more restrictions. This call stopped working and I had to adjust every parameter for the connection not to abort. I am now doing requests of 50 profiles at a time. *2026-01-16*
+
+
+
+
+
 

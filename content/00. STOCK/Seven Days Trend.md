@@ -5,7 +5,8 @@ tags:
 ---
 ![[Pasted image 20250823191944.png]]
 
-This card displays the total number of new job postings from the most recent seven-day period. he underlying logic queries all jobs posted in the last 14 days and groups them into two distinct seven-day periods to calculate this trend, offering a snapshot of short-term momentum in the job market.
+This card displays the total number of new job postings from the most recent seven-day period. he underlying logic queries all jobs posted in the last 14 days and groups them into two distinct seven-day periods to calculate this trend, offers a snapshot of short-term momentum in the job market. It is not straight forward to calculate, check the [[The rolling week problem]].
+
 ```sql
 SELECT
   CASE
