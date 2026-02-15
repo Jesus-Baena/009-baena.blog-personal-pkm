@@ -16,7 +16,7 @@ I have also **moved into making my apps stateless** (again, 2025 was a busy year
 In summary, *an hybrid setup* has shown to be the most balanced setup in terms of reliability, high availability, privacy, sovereignty and speed.  
 
 
-```
+```bash
 #!/bin/bash
 
 # ==============================================================================
