@@ -13,4 +13,4 @@ But it also have a SQL editor that is better used to trace the calculations and 
 
 ![[Pasted image 20260208125546.png]]
 
-I used it extensively for the [[HUMANITARIAN SECTOR EMPLOYMENT DASHBOARD]], it offers great embedding options. 
+I used it extensively for the [[HUMANITARIAN JOBS DASHBOARD]], it offers great embedding options. 
