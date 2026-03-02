@@ -13,6 +13,43 @@ github:
 post:
 draft: false
 ---
+
+<div class="project-header-meta">
+
+<div class="project-title-section">
+<h1>Project COMPASS</h1>
+<div class="subtitle">A Generic Field Management Toolkit for Humanitarian NGOs</div>
+<div class="description">A generic toolkit for Humanitarian Field Management and Operations, developed from fourteen years of field experience to help NGOs establish and manage field operations efficiently.</div>
+</div>
+
+<div class="meta-grid">
+<div class="meta-item">
+<span class="meta-label">Status</span>
+<span class="status-badge ongoing">Ongoing</span>
+</div>
+<div class="meta-item">
+<span class="meta-label">Started</span>
+<span class="meta-value">October 2024</span>
+</div>
+<div class="meta-item">
+<span class="meta-label">Last Updated</span>
+<span class="meta-value">February 2026</span>
+</div>
+</div>
+
+<div class="meta-grid full-width">
+<div class="meta-item wide">
+<span class="meta-label">Tags</span>
+<div class="tag-list">
+<a href="../tags/FieldManagement" class="tag internal tag-link">FieldManagement</a>
+</div>
+</div>
+</div>
+
+</div>
+
+---
+
 ## **1. Project Title:**  
 Project COMPASS: A Generic Field Management Toolkit for Humanitarian NGOs
     

@@ -9,6 +9,11 @@ a.internal {
   border-radius: 0 !important;
 }
 
+// Hide the default Quartz ProjectMeta component (we use custom .project-header-meta instead)
+.project-meta {
+  display: none !important;
+}
+
 // Dark mode custom colors
 [saved-theme="dark"] {
   // Bold text - standard white
@@ -249,6 +254,159 @@ a.internal {
         line-height: 1.6;
         margin: 0;
       }
+      
+      .project-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--lightgray);
+        
+        [saved-theme="dark"] & {
+          border-top-color: var(--gray);
+        }
+        
+        .meta-row {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.9rem;
+          
+          .meta-label {
+            font-weight: 600;
+            color: var(--gray);
+            min-width: 80px;
+          }
+          
+          .meta-value {
+            color: var(--darkgray);
+            
+            a {
+              color: var(--secondary);
+              text-decoration: none;
+              
+              &:hover {
+                color: var(--tertiary);
+                text-decoration: underline;
+              }
+            }
+          }
+          
+          .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            
+            &.production {
+              background: rgba(34, 197, 94, 0.15);
+              color: #16a34a;
+              
+              [saved-theme="dark"] & {
+                background: rgba(34, 197, 94, 0.25);
+                color: #4ade80;
+              }
+            }
+            
+            &.development {
+              background: rgba(59, 130, 246, 0.15);
+              color: #2563eb;
+              
+              [saved-theme="dark"] & {
+                background: rgba(59, 130, 246, 0.25);
+                color: #60a5fa;
+              }
+            }
+            
+            &.planning {
+              background: rgba(168, 85, 247, 0.15);
+              color: #9333ea;
+              
+              [saved-theme="dark"] & {
+                background: rgba(168, 85, 247, 0.25);
+                color: #c084fc;
+              }
+            }
+            
+            &.ongoing {
+              background: rgba(234, 179, 8, 0.15);
+              color: #ca8a04;
+              
+              [saved-theme="dark"] & {
+                background: rgba(234, 179, 8, 0.25);
+                color: #facc15;
+              }
+            }
+            
+            &.archived {
+              background: rgba(107, 114, 128, 0.15);
+              color: #6b7280;
+              
+              [saved-theme="dark"] & {
+                background: rgba(107, 114, 128, 0.25);
+                color: #9ca3af;
+              }
+            }
+          }
+        }
+        
+        .meta-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          
+          a {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.35rem 0.75rem;
+            background: var(--lightgray);
+            border-radius: 6px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            
+            [saved-theme="dark"] & {
+              background: rgba(255, 255, 255, 0.08);
+              color: var(--light);
+            }
+            
+            &:hover {
+              background: var(--secondary);
+              color: white;
+              transform: translateY(-1px);
+            }
+            
+            &::before {
+              content: '🔗';
+              margin-right: 0.35rem;
+            }
+            
+            &[href*="github"]::before {
+              content: '⚙️';
+            }
+            
+            &[href*="briefing"]::before,
+            &[href*="BRIEFING"]::before {
+              content: '📋';
+            }
+            
+            &[href*="article"]::before {
+              content: '📄';
+            }
+            
+            &[href*="linkedin"]::before,
+            &[href*="twitter"]::before,
+            &[href*="post"]::before {
+              content: '📱';
+            }
+          }
+        }
+      }
     }
     
     .project-image {
@@ -273,6 +431,363 @@ a.internal {
       .project-image {
         width: 100%;
         max-width: 400px;
+      }
+    }
+  }
+}
+
+// Individual project page header metadata
+.project-header-meta {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  
+  [saved-theme="dark"] & {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: var(--gray);
+  }
+  
+  .project-title-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--lightgray);
+    
+    [saved-theme="dark"] & {
+      border-bottom-color: var(--gray);
+    }
+    
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+      color: var(--dark);
+      
+      [saved-theme="dark"] & {
+        color: #ffffff;
+      }
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--gray);
+      margin: 0 0 1rem 0;
+    }
+    
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--darkgray);
+      margin: 0;
+    }
+  }
+  
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    
+    &.full-width {
+      grid-template-columns: 1fr;
+    }
+    
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      
+      &.wide {
+        grid-column: 1 / -1;
+      }
+      
+      .meta-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--gray);
+      }
+      
+      .meta-value {
+        font-size: 1rem;
+        color: var(--darkgray);
+        
+        code {
+          background: var(--lightgray);
+          padding: 0.2rem 0.4rem;
+          border-radius: 3px;
+          font-size: 0.9rem;
+          
+          [saved-theme="dark"] & {
+            background: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+      
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        
+        .tag {
+          background: var(--secondary);
+          color: #ffffff;
+          padding: 0.25rem 0.75rem;
+          border-radius: 12px;
+          font-size: 0.85rem;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          
+          [saved-theme="dark"] & {
+            color: #000000;
+          }
+          
+          &:hover {
+            opacity: 0.8;
+            transform: translateY(-1px);
+          }
+          
+          &.internal {
+            text-decoration: none;
+          }
+        }
+      }
+      
+      .alias-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        
+        .alias {
+          color: var(--darkgray);
+          font-family: monospace;
+          font-size: 0.9rem;
+          
+          &::before {
+            content: "→ ";
+            color: var(--gray);
+          }
+        }
+      }
+      
+      .status-badge {
+        display: inline-block;
+        padding: 0.35rem 1rem;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        width: fit-content;
+        
+        &.production {
+          background: rgba(34, 197, 94, 0.15);
+          color: #16a34a;
+          
+          [saved-theme="dark"] & {
+            background: rgba(34, 197, 94, 0.25);
+            color: #4ade80;
+          }
+        }
+        
+        &.development {
+          background: rgba(59, 130, 246, 0.15);
+          color: #2563eb;
+          
+          [saved-theme="dark"] & {
+            background: rgba(59, 130, 246, 0.25);
+            color: #60a5fa;
+          }
+        }
+        
+        &.planning {
+          background: rgba(168, 85, 247, 0.15);
+          color: #9333ea;
+          
+          [saved-theme="dark"] & {
+            background: rgba(168, 85, 247, 0.25);
+            color: #c084fc;
+          }
+        }
+        
+        &.ongoing {
+          background: rgba(234, 179, 8, 0.15);
+          color: #ca8a04;
+          
+          [saved-theme="dark"] & {
+            background: rgba(234, 179, 8, 0.25);
+            color: #facc15;
+          }
+        }
+        
+        &.testing {
+          background: rgba(96, 165, 250, 0.15);
+          color: #1e40af;
+          
+          [saved-theme="dark"] & {
+            background: rgba(96, 165, 250, 0.25);
+            color: #93c5fd;
+          }
+        }
+        
+        &.archived {
+          background: rgba(107, 114, 128, 0.15);
+          color: #6b7280;
+          
+          [saved-theme="dark"] & {
+            background: rgba(107, 114, 128, 0.25);
+            color: #9ca3af;
+          }
+        }
+      }
+    }
+  }
+  
+  .meta-links-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--lightgray);
+    
+    [saved-theme="dark"] & {
+      border-top-color: var(--gray);
+    }
+    
+    .meta-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background: var(--secondary);
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background: var(--tertiary);
+        color: #ffffff !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+      
+      &.briefing {
+        background: #8b5cf6;
+        color: #000000 !important;
+        
+        [saved-theme="dark"] & {
+          color: #ffffff !important;
+        }
+        
+        &:hover {
+          background: #7c3aed;
+          color: #000000 !important;
+          
+          [saved-theme="dark"] & {
+            color: #ffffff !important;
+          }
+        }
+      }
+      
+      &.demo {
+        background: #3b8f93;
+        color: #ffffff !important;
+        
+        [saved-theme="dark"] & {
+          background: #4a7c80;
+          color: #ffffff !important;
+        }
+        
+        &:hover {
+          background: #2d7074;
+          color: #ffffff !important;
+          
+          [saved-theme="dark"] & {
+            background: #3a6468;
+            color: #ffffff !important;
+          }
+        }
+      }
+      
+      &.article {
+        background: #f59e0b;
+        color: #ffffff !important;
+        
+        &:hover {
+          background: #d97706;
+          color: #ffffff !important;
+        }
+      }
+      
+      &.github {
+        background: #374151;
+        color: #ffffff !important;
+        
+        &:hover {
+          background: #1f2937;
+          color: #ffffff !important;
+        }
+      }
+      
+      &.social {
+        background: #06b6d4;
+        color: #ffffff !important;
+        
+        &:hover {
+          background: #0891b2;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .meta-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Large graph view for tag pages and list pages (appears in beforeBody, full-width)
+.popover-hint {
+  & > .graph {
+    margin: 2rem 0;
+    width: 100%;
+    
+    & > h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    & > .graph-outer {
+      height: 550px; // Large graph for tag/list pages (default is 250px)
+      width: 100%;
+      border: 2px solid var(--lightgray);
+      position: relative;
+      
+      & > .graph-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      @media (max-width: 1280px) {
+        height: 450px;
+      }
+      
+      @media (max-width: 1024px) {
+        height: 350px;
+      }
+      
+      @media (max-width: 768px) {
+        height: 300px;
       }
     }
   }

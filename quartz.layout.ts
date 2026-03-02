@@ -41,8 +41,8 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       filterFn: (node) => {
-        // Hide the "00. STOCK" folder from the explorer
-        return node.displayName !== "00. STOCK"
+        // Hide "00. STOCK" and "content" folders from the explorer
+        return node.displayName !== "00. STOCK" && node.displayName !== "content"
       },
     }),
   ],
@@ -55,7 +55,24 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+    Component.Graph({
+      localGraph: {
+        scale: 0.9,
+        depth: 2,
+        repelForce: 0.8,
+        centerForce: 0.2,
+        linkDistance: 40,
+        fontSize: 0.5,
+      },
+      globalGraph: {
+        scale: 0.9,
+      },
+    }),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -70,8 +87,8 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer({
       filterFn: (node) => {
-        // Hide the "00. STOCK" folder from the explorer
-        return node.displayName !== "00. STOCK"
+        // Hide "00. STOCK" and "content" folders from the explorer
+        return node.displayName !== "00. STOCK" && node.displayName !== "content"
       },
     }),
   ],

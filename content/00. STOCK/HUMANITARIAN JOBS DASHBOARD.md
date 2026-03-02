@@ -15,6 +15,53 @@ github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
 post: "[Linkedin](https://www.linkedin.com/posts/jbaenanet_humanitariantech-dataanalysis-reliefweb-activity-7401125392348221440-vGZt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABWDzXkB5OUe7-mhlazcv5nsspWDYSgcmP4)"
 draft: false
 ---
+
+<div class="project-header-meta">
+
+<div class="project-title-section">
+<h1>Humanitarian Jobs Dashboard</h1>
+<div class="subtitle">Real-Time Sector Employment Intelligence</div>
+<div class="description">A real-time business intelligence dashboard processing hundreds of thousands of data points daily to provide insights on humanitarian jobs, tracking the impact of funding crises on workforce dynamics, localization trends, and technical skill requirements.</div>
+</div>
+
+<div class="meta-grid">
+<div class="meta-item">
+<span class="meta-label">Status</span>
+<span class="status-badge production">Production</span>
+</div>
+<div class="meta-item">
+<span class="meta-label">Started</span>
+<span class="meta-value">February 2025</span>
+</div>
+<div class="meta-item">
+<span class="meta-label">Last Updated</span>
+<span class="meta-value">January 2026</span>
+</div>
+</div>
+
+<div class="meta-grid full-width">
+<div class="meta-item wide">
+<span class="meta-label">Tags</span>
+<div class="tag-list">
+<a href="../tags/AI" class="tag internal tag-link">AI</a>
+<a href="../tags/DataAnalysis" class="tag internal tag-link">DataAnalysis</a>
+<a href="../tags/BusinessIntelligence" class="tag internal tag-link">BusinessIntelligence</a>
+</div>
+</div>
+</div>
+
+<div class="meta-links-section">
+<a href="[[HUMANITARIAN JOBS DASHBOARD briefing]]" class="meta-link briefing">📋 Project Briefing</a>
+<a href="https://baena.ai/demos/reliefjobs-dashboard" class="meta-link demo" target="_blank" rel="noopener noreferrer">🔗 Live Demo</a>
+<a href="https://baena.ai/articles/jobs-relief" class="meta-link article" target="_blank" rel="noopener noreferrer">📄 Read Article</a>
+<a href="https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs" class="meta-link github" target="_blank" rel="noopener noreferrer">⚙️ View on GitHub</a>
+<a href="https://www.linkedin.com/posts/jbaenanet_humanitariantech-dataanalysis-reliefweb-activity-7401125392348221440-vGZt" class="meta-link social" target="_blank" rel="noopener noreferrer">📱 LinkedIn Post</a>
+</div>
+
+</div>
+
+---
+
 ## **1. Project Title:** **Humanitarian Jobs Dashboard 2025 - 2026:** 
 A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for enterprise clients.
 
