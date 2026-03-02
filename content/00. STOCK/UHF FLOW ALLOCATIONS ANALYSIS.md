@@ -40,7 +40,7 @@ draft: false
 <div class="meta-item wide">
 <span class="meta-label">Tags</span>
 <div class="tag-list">
-<a href="../tags/DataAnalysis" class="tag internal tag-link">DataAnalysis</a>
+<span class="tag">DataAnalysis</span>
 </div>
 </div>
 </div>
