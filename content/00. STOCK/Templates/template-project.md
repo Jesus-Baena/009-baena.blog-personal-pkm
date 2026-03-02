@@ -1,5 +1,6 @@
 ---
 title:
+Subtitle:
 description:
 aliases:
 date:
@@ -31,15 +32,11 @@ draft:
 
 ## **5. Project Objectives:**
 
-    
 
-## **6. Target Beneficiaries:**
 
-    
-
-## **7. Expected Outcomes & Deliverables:**
+## **6. Expected Outcomes & Deliverables:**
 
 
 
-## **8. Sustainability:**  
+## **7. Sustainability:**  
 
