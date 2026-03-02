@@ -1,4 +1,11 @@
-
+---
+title: Apr 2014 - WaSH Coordinator (Head of Department) with Action Against Hunger in PHILIPPINES
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 Deployed to Tacloban in the immediate aftermath of super-typhoon Yolanda (Haiyan). I was **responsible for designing and managing the first-phase emergency** WASH response for Leyte Island, establishing life-saving services for displaced populations in one of the most devastated areas.
 
 - **Launched and managed the initial WASH emergency** response within the first week of the disaster, focusing on IDP camps and heavily damaged coastal areas.

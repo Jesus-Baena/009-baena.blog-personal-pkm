@@ -2,8 +2,10 @@
 title: The Mistake of Excluding Local Health Facilities from Localization Targets in Ukraine
 draft: false
 tags:
+date: 2026-01-28
+created: 2026-02-02
+modified: 2026-02-03
 ---
-
 The Ukraine Humanitarian Fund (UHF) recently achieved a historic milestone, with nearly **60% of funding directed to local partners**. In almost any other emergency, I would celebrate this success; however, in the case of Ukraine, it represents a missed opportunity to directly support local health facilities.
 
 The fundamental comparative advantage of this type of funding is typically to support local NGOs from civil society rather than governmental entities. Yet, by applying a *"blanket approach"* to all sectors, we have missed a critical nuance. In the specific case of the health sector—and within the context of an ambitious reform seeking deep decentralization—this exclusion is increasingly unfitting.

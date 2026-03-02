@@ -1,7 +1,10 @@
 ---
-title: Advanced
+title: The legal context of Communal Non-Profit Enterprises (CNPEs)
 draft: false
 tags:
+date: 2026-01-28
+created: 2026-02-03
+modified: 2026-02-03
 ---
 #### 1. The Foundation of Autonomy and Strategic Purchasing
 

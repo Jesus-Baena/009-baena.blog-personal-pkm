@@ -4,6 +4,9 @@ draft: false
 tags:
   - tech
   - tutorial
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-01-18
+modified: 2026-02-06
 ---
 Loving the Omarchy project, but occasionally, things break in interesting ways. Recently, my setup (running on the "Omarchy" dotfiles) started misbehaving. I was dealing with two annoying issues: my configuration menus wouldn't open, and Neovim was throwing cryptic errors.
 

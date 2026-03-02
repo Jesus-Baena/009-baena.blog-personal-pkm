@@ -1,4 +1,11 @@
-
+---
+title: Feb 2025 - Field Coordinator with Doctors of the World in UKRAINE
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 Leading and **directing comprehensive humanitarian operations** in a conflict zone. My leadership ensures the effective delivery of mobile primary medical and mental health services across the _Zaporizhia_ and _Kharkiv_ oblasts, focusing on program excellence, operational integrity, and robust security management to protect staff and serve war-affected populations.
 
 - Directed **complex field operations**, ensuring program activities align with strategic objectives and humanitarian principles in an active conflict environment.

@@ -2,6 +2,9 @@
 title: Installing Immich in Synology using Tailscale as sidecar
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-10-04
+modified: 2025-10-05
 ---
 # Installing Immich on Synology with Tailscale (and the Errors We Fixed Along the Way)
 

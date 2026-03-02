@@ -2,8 +2,10 @@
 title: The rolling week problem
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-11-30
+modified: 2026-02-01
 ---
-
 ### Methodological Notes: The "Rolling Week" Problem
 
 Building and interpreting a live dashboard comes with its own set of technical challenges. Metabase excels at composing queries based on fixed calendar ranges (e.g., "Last Week" or "This Month"). However, this creates analytical noise.

@@ -2,6 +2,10 @@
 title: Nvidia GPU GeForce 4090
 draft: false
 tags:
+  - stack
+date:
+created: 2026-02-03
+modified: 2026-02-03
 ---
 I made this investment in 2024, and I was already using local models in a way that justified the cost. But *during 2025, the quality of local models has become amazingly competitive*. When I compare translations or information extraction, the differences compared to paid APIs are indistinguishable.
 

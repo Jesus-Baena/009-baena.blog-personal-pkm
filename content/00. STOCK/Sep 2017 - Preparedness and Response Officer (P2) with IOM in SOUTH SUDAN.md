@@ -1,4 +1,11 @@
-
+---
+title: Sep 2017 - Preparedness and Response Officer (P2) with IOM in SOUTH SUDAN
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 As a member of ACF's Emergency Pool, s**erved as a rapidly deployable global expert to initiate and manage critical WaSH responses.** I conducted exploratory missions, launched emergency operations in numerous countries, and contributed to global strategy by developing technical tools and preparedness plans.
 
 - **Deployed on short notice** to lead emergency assessments and launch first-phase WaSH responses globally (including Peru, Ecuador, Philippines, Niger, Mali).

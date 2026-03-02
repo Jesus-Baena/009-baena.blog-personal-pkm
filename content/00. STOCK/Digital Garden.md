@@ -2,8 +2,10 @@
 title: Digital Garden
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-17
+modified: 2025-08-17
 ---
-
 > [!CONCEPT] Concept
 > A digital garden is an online space where individuals can cultivate and connect their thoughts, ideas, and knowledge over time. It is like a personal wiki or a connected notebook that grows and evolves as the creator learns.
 > 

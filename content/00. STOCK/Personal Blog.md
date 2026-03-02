@@ -2,8 +2,10 @@
 title: Personal Blog
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-11
+modified: 2025-08-12
 ---
-
 > [!CONCEPT] CONCEPT
 > A **personal blog** (short for "weblog") is an online journal or informational website run by an individual, where they regularly share their thoughts, experiences, opinions, or expertise on one or more topics. Posts are typically displayed in reverse chronological order, with the newest content appearing first.
 

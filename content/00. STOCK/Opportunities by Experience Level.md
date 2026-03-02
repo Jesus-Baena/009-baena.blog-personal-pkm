@@ -2,6 +2,9 @@
 title: Opportunities by Experience Level
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-15
+modified: 2026-03-02
 ---
 ![[Pasted image 20260215091106.png]]
 

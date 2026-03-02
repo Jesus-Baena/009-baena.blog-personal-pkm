@@ -2,8 +2,10 @@
 title: Why We Over-Plan for Preparedness and Under-Plan for Delivery
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-11-30
+modified: 2025-11-30
 ---
-
 ### The Bunker vs. The Bank Transfer: Why We Over-Plan for Preparedness and Under-Plan for Delivery
 
 ##### The Trap of "Strategic" Anxiety

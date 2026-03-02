@@ -2,6 +2,9 @@
 title: Home Office Infrastructure
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-11
+modified: 2025-08-17
 ---
 I am a great believer of [[Open Source]] and [[Self Hosting]]. 
 

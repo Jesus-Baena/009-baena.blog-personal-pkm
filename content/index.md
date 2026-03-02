@@ -1,5 +1,8 @@
 ---
 title: Welcome to my Blog
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2021-07-18
+modified: 2026-02-09
 ---
 Welcome to my site, a space that merges my Personal Blog with my [[Digital Garden]]. Expect a dynamic collection of opinions, drafts, raw notes, and ramblings.
 

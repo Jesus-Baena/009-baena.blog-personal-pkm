@@ -2,6 +2,9 @@
 title: I moved to create my own Docker Swarm
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-03
+modified: 2026-02-15
 ---
 2025 was a pivotal year for my infrastructure's *"internal plumbing."* I reached a point where I could no longer rely on isolated, stateful containers. To ensure reliable service continuity, I invested significant time and effort into building an orchestrated system.
 

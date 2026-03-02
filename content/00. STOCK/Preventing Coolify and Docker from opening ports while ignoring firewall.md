@@ -2,8 +2,10 @@
 title: Preventing Coolify and Docker from opening ports while ignoring firewall
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-18
+modified: 2026-02-03
 ---
-
 ## The problem. 
 By default Docker will open ports ignoring the *internal* server firewall rules (such as *ufw*). Typical solution is to set *external* firewall rules through your VPS provider. But some providers do not offer this type of protection (or they charge you handsomely for it).
 

@@ -3,6 +3,9 @@ title: Obsidian
 draft: false
 tags:
   - stack
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-12
+modified: 2026-02-01
 ---
 I have been using Obsidian for more than three years now. I use it as a Personal Information Management (PIM) system, as a Project repository and as [[Personal Knowledge Management]] (PMS) system. 
 

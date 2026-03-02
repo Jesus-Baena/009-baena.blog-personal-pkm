@@ -1,4 +1,11 @@
-
+---
+title: Nov 2012 - International Delegate (WASH) with Austrian German Red Cross in HAITI
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 As Program Manager, I was responsible for post-earthquake recovery WASH actions that **provided essential facilities to 1,600 households.** Additionally, I led emergency response efforts during the hurricane season, ensuring timely and effective aid to populations affected by Hurricanes Sandy and Isaac.
 
 - Managed WASH recovery projects providing 1,600 households with **access to safe water and sanitation** facilities.

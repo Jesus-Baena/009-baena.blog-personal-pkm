@@ -1,3 +1,11 @@
+---
+title: Mar 2021 - Career Sabbatical & Professional Development
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 Following over a decade in high-intensity emergency response, **I undertook a strategic sabbatical focused on reflection and targeted professional development.** This period was dedicated to deepening my understanding of humanitarian complexities through academic study and acquiring new technical skills in data science to drive more impactful, evidence-based interventions.
 
 - Engaged in strategic **career reflection** and professional goal-setting after 11 years in demanding frontline and leadership roles.

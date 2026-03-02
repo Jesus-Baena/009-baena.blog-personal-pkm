@@ -1,4 +1,11 @@
-
+---
+title: Jan 2010 - Emergency Medical Technician Instructor with Spanish Red Cross
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 Developed and delivered **comprehensive training programs for aspiring Emergency Medical Technicians**. My role involved creating structured curricula, providing hands-on instruction, and conducting rigorous assessments to ensure graduates were fully competent for real-world emergency deployment.
 
 - Designed and delivered a full curriculum covering **trauma care, basic life suppor**t (BLS), and automated external defibrillator (AED) protocols.

@@ -4,8 +4,10 @@ draft:
 tags:
   - AI
   - DataAnalysis
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-11-30
+modified: 2026-02-01
 ---
-
 Job descriptions often contain vital data buried in dense paragraphs of text—information like donor requirements, nationality restrictions, or contract types. For my project on [[content/00. STOCK/Humanitarian Sector Employment Dashboard|Humanitarian Sector Employment Dashboard]] I created an **n8n workflow** designed to automatically read, analyze, and structure this data using Large Language Models (LLMs).
 
 ### **What This Workflow Does**

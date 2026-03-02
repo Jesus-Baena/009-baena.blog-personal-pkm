@@ -1,4 +1,11 @@
-
+---
+title: Nov 2013 - Emergency Program Manager with Action Against Hunger in PHILIPPINES
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 Managed the final implementation and successful handover of the sanitation component for a large-scale, post-earthquake recovery program. My work focused on **ensuring the long-term sustainability** of sanitation services by scaling up coverage and fostering community ownership.
 
 - Directed the final phase of a post-earthquake sanitation program, bringing **services to a total of 2,500 households**.

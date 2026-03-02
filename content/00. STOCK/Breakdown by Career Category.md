@@ -2,8 +2,10 @@
 title: Breaking Down by Career
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-23
+modified: 2026-02-01
 ---
-
 ![[Pasted image 20250823201006.png]]
 
 

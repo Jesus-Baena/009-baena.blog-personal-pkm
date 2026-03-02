@@ -3,8 +3,10 @@ title: A reminder on Digital Sovereignty
 draft: false
 tags:
   - tech
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-11
+modified: 2025-08-12
 ---
-
 > [!REMINDER]
 > Let this be a chilling reminder. There is only one way of achieve personal Digital Sovereignty, and this is ==self-hosting on premises==. 
 

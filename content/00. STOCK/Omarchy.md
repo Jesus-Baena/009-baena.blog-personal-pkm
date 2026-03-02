@@ -2,6 +2,9 @@
 title: Omarchy
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-06
+modified: 2026-02-13
 ---
 I previously experimented with Arch Linux via Manjaro, but frequent roadblocks and a lack of ArcGIS compatibility eventually forced a return to other systems. However, with AI now available to help troubleshoot technical hurdles—combined with the streamlined elegance of [Omarchy](https://omarchy.org/)—**I’ve fully embraced the Arch ecosystem once again**.
 

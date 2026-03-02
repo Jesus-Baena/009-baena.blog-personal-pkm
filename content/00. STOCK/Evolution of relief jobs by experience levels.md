@@ -2,6 +2,9 @@
 title: Evolution of relief jobs by experience levels
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-14
+modified: 2026-02-01
 ---
 Same data, but the first chart shows the evolution of the relief job market by absolute numbers and the second one does it by percentage. 
 

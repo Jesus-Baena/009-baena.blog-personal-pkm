@@ -2,6 +2,9 @@
 title: From Riga to Andalusia in two wheels
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-10-03
+modified: 2025-11-30
 ---
 ### **The Long Ride Home: From Riga to Andalusia on Two Wheels**
 

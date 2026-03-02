@@ -1,4 +1,11 @@
-
+---
+title: Apr 2015 - Emergency WaSH Coordinator (Global Roving) with Action Against Hunger
+draft: 
+tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
+---
 Directed the strategic post-Typhoon Yolanda WASH recovery as Head of Department. **I led a capital-level team and oversaw a large-scale portfolio** of projects that restored critical infrastructure and improved public health for hundreds of thousands of individuals.
 
 - **Supervised the full project management cycle** for all post-typhoon WASH recovery programs, from strategic planning to final evaluation.

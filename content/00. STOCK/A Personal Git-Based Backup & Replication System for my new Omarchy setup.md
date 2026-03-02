@@ -2,9 +2,10 @@
 title: A Personal Git-Based Backup & Replication System for my new Omarchy setup
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-10-21
+modified: 2026-02-06
 ---
-
-
 ## A Personal Git-Based Backup & Replication System for my new Omarchy setup
 
 As an Arch Linux user (btw), you know the power of granular control – and the pain of starting from scratch. While tools like `omarchy` offer snapshot capabilities, I wanted a robust, version-controlled system for my personal configuration ("dotfiles") that lives alongside my data backups and makes reproducing my exact setup on any new machine incredibly easy.

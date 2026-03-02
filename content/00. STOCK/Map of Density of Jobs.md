@@ -2,6 +2,9 @@
 title: Map of Density of Jobs
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-28
+modified: 2026-03-02
 ---
 ![[Pasted image 20260215092918.png]]
 

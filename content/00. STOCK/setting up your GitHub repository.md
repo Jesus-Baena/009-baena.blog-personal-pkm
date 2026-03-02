@@ -1,7 +1,9 @@
 ---
 title: Setting up your GitHub repository
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2023-12-03
+modified: 2025-10-17
 ---
-
 First, make sure you have Quartz [[Welcome to my Blog#🪴 Get Started|cloned and setup locally]].
 
 Then, create a new repository on GitHub.com. Do **not** initialize the new repository with `README`, license, or `gitignore` files.

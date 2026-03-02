@@ -2,6 +2,9 @@
 title: Jobs Closing Soon
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2025-08-23
+modified: 2026-02-08
 ---
 ![[Pasted image 20250823192710.png]]
 

@@ -2,8 +2,10 @@
 title: Database Structure
 draft:
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-01
+modified: 2026-02-01
 ---
-
 ### Core Table
 
 This table holds the main, unique information for each job posting.

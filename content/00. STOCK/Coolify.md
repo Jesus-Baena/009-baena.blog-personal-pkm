@@ -2,6 +2,9 @@
 title: Coolify
 draft: false
 tags:
+date: # YYYY-MM-DD — overrides displayed date on the site
+created: 2026-02-03
+modified: 2026-02-04
 ---
 I only used Coolify for a few months, but it was incredibly fruitful. Then [[I moved to create my own Docker Swarm]].
 
