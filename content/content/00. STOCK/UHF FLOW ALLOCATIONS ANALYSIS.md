@@ -1,6 +1,7 @@
 ---
 title: Ukraine Humanitarian Pooled Fund Analysis
-description: This report provides a comprehensive analysis of the Ukraine Humanitarian Pooled Fund, **examining funding allocations and project implementation from 2019 to 2025**. These findings are contextualized within the global CBPF landscape, leveraging historical data from 28 country pooled funds spanning **2014 to 2025** (the mature operational period) to provide comparative insights and identify emerging trends in humanitarian financing.
+subtitle: Funding Allocation and Grant Characteristics with emphasis on the health sector
+description: This report provides a comprehensive analysis of the Ukraine Humanitarian Pooled Fund, examining funding allocations and project implementation from 2019 to 2025. These findings are contextualized within the global CBPF landscape, leveraging historical data from 28 country pooled funds spanning 2014 to 2025 (the mature operational period) to provide comparative insights and identify emerging trends in humanitarian financing.
 aliases:
   - 2026-ukraine-poolfund-analysis
 date: 2026-02-25
@@ -11,7 +12,7 @@ status: Ongoing
 briefing:
 link:
 article:
-github:
+github: https://github.com/Jesus-Baena/2026-ukraine-poolfund-analysis
 post:
 draft: false
 ---
