@@ -78,7 +78,7 @@ To build a sovereign, AI-powered intelligence platform that monitors the ReliefW
 
 ## **5. Project Objectives:**
 
-- **Automated Market Monitoring:** Deploy n8n workflows to ingest daily job data, specifically tracking the ratio of consultancy vs. full-time roles to monitor sector precarity.
+- **Automated Market Monitoring:** Deploy [[n8n]] workflows to ingest daily job data, specifically tracking the ratio of consultancy vs. full-time roles to monitor sector precarity.
     
 - **AI-Driven Extraction:** Leverage Flowise (LLM extraction) to read job descriptions and determine "Localization" status (local vs. international) and hidden technical requirements (SQL, KoboToolbox, PowerBI).
     
