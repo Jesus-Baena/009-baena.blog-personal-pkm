@@ -28,7 +28,7 @@ draft: false
 <div class="meta-grid">
 <div class="meta-item">
 <span class="meta-label">Status</span>
-<span class="status-badge ongoing">Ongoing</span>
+<span class="status-badge development">Development</span>
 </div>
 <div class="meta-item">
 <span class="meta-label">Started</span>
