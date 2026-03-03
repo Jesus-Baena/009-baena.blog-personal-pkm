@@ -48,3 +48,5 @@ Let's acknowledge where the system succeeds. The transparency of the data is com
 * **The Narrative Black Hole**: While the quantitative endpoints exist, the qualitative data—full project proposals, detailed monitoring reports, and narrative justifications beyond a tweet-length summary—remain out of reach. This blocks any possibility of leveraging Large Language Models (LLMs) to analyze project logic, methodology, or impact stories at scale. We are left with the numbers but lose the context, making it impossible to audit *how* the work is being done or to detect patterns in project quality. An example of this is my [[LLM extraction of new information in Job Descriptions about localization]].
 
 
+En conclusion, the exploitation of the data is limited to these endpoints being operational: [[Report Available Endpoints CBPF]]
+
