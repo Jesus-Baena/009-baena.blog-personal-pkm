@@ -25,7 +25,7 @@ Let's acknowledge where the system succeeds. The transparency of the data is com
 
 ## The not that Good 
 
-- **Reliability**: The strict dependence on the `AllocationFlow` endpoint for detailed financial tracking hit a wall. We consistently encountered HTTP 500 Internal Server Errors. 
+- **Reliability**: The strict dependence on the `AllocationFlow` endpoint for detailed financial tracking hit a wall. We consistently encountered HTTP 500 Internal Server Errors.  Not very [[n8n]] friendly. 
 
 - **Format Inconsistency**: The CBPF API frequently returns HTML error pages instead of proper status codes or JSON messages rather than structured JSON.
 
@@ -45,4 +45,6 @@ Let's acknowledge where the system succeeds. The transparency of the data is com
 
 * **Historical Blind Spots (The Pipeline Problem)**: The API provides a snapshot of the current moment, but not a historical ledger of the project lifecycle. This is most critical in the `Pipeline` endpoints, which show projects currently under review or development. Once a project is approved or rejected, it effectively vanishes from this view. Unless you build your own daily archiving system (as we are doing), it is impossible to analyze approval bottlenecks, rejection rates, or the "time-to-decision" for critical funding. The API deletes the history as it creates the future.
 
-* **The Narrative Black Hole**: While the quantitative endpoints exist, the qualitative data—full project proposals, detailed monitoring reports, and narrative justifications beyond a tweet-length summary—remain out of reach. This blocks any possibility of leveraging Large Language Models (LLMs) to analyze project logic, methodology, or impact stories at scale. We are left with the numbers but lose the context, making it impossible to audit *how* the work is being done or to detect patterns in project quality.
+* **The Narrative Black Hole**: While the quantitative endpoints exist, the qualitative data—full project proposals, detailed monitoring reports, and narrative justifications beyond a tweet-length summary—remain out of reach. This blocks any possibility of leveraging Large Language Models (LLMs) to analyze project logic, methodology, or impact stories at scale. We are left with the numbers but lose the context, making it impossible to audit *how* the work is being done or to detect patterns in project quality. An example of this is my [[LLM extraction of new information in Job Descriptions about localization]].
+
+
