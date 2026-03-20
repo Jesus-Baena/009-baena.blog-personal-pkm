@@ -1,16 +1,19 @@
 ---
-title:
+title: AI PARALEGAL ADVISOR NGOS IN UKRAINE
 description:
-date:
+aliases:
+  - 2025-ukraine-law-chatbot
+date: 2025-01-13
 lastUpdated:
 tags:
+  - AI
 status: Production
 briefing:
-link:
-article:
-github:
+link: https://baena.ai/demos/paralegal-advisor
+article: https://baena.ai/articles/paralegal-advisor
+github: https://github.com/Jesus-Baena/2025-ukraine-law-chatbot
 post:
-draft: true
+draft: false
 ---
 ## **1. Project Title:**  
 

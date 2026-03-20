@@ -384,19 +384,13 @@ Almost all detailed reporting, financial tracking, and monitoring endpoints retu
 
 curl -s "https://cbpfapi.unocha.org/vo1/odata/ENDPOINT_NAME?\$format=csv&\$top=5"
 
-  
-
 # Check endpoint size
 
 curl -s "https://cbpfapi.unocha.org/vo1/odata/ENDPOINT_NAME?\$format=csv" | wc -l
 
-  
-
 # Get full metadata
 
 curl -s "https://cbpfapi.unocha.org/vo1/odata/\$metadata" | grep -A 20 "EntityType.*ENDPOINT"
-
-  
 
 # List all endpoints
 
