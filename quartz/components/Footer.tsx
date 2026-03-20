@@ -9,34 +9,23 @@ interface Options {
 
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-    // 1. We split the email parts so simple bots/scrapers don't see the full address
-    const user = "jesus"
-    const domain = "jbaena.net"
-    
-    // 2. We separate your custom links from the hardcoded email logic
     const links = opts?.links ?? {}
 
     return (
       <footer class={`${displayClass ?? ""}`}>
         <ul>
-          {/* 3. The Protected Email Link 
-              We use a simple React event to build the link only when clicked.
-              This prevents bots from scraping it from the HTML href attribute. 
-          */}
           <li>
-            <a 
+            <a
               href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = `mailto:${user}@${domain}`;
-              }}
+              data-email-user="jesus"
+              data-email-domain="jbaena.net"
+              class="footer-email-link"
               title="Send me an email"
             >
               Email
             </a>
           </li>
 
-          {/* 4. Your other links (Github, Twitter, etc.) */}
           {Object.entries(links).map(([text, link]) => (
             <li>
               <a href={link}>{text}</a>
@@ -49,6 +38,20 @@ export default ((opts?: Options) => {
       </footer>
     )
   }
+
+  Footer.afterDOMLoaded = `
+    document.addEventListener("nav", () => {
+      const emailLink = document.querySelector("a.footer-email-link")
+      if (emailLink) {
+        emailLink.addEventListener("click", (e) => {
+          e.preventDefault()
+          const user = emailLink.getAttribute("data-email-user")
+          const domain = emailLink.getAttribute("data-email-domain")
+          window.location.href = \`mailto:\${user}@\${domain}\`
+        })
+      }
+    })
+  `
 
   Footer.css = style
   return Footer
