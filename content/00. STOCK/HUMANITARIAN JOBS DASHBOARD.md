@@ -1,18 +1,32 @@
 ---
-title: Project snapshot - Humanitarian Jobs Dashboard
-description: A real-time business intelligence dashboard processing hundred of thousand of data points daily to provide insights on humanitarian jobs.
+title: "Humanitarian Jobs Dashboard"
+subtitle: "Real-Time Sector Employment Intelligence"
+description: "A real-time business intelligence dashboard processing hundreds of thousands of data points daily to provide insights on humanitarian jobs, tracking the impact of funding crises on workforce dynamics, localization trends, and technical skill requirements."
+image: 
+aliases:
+  - 2025-dashboard-reliefweb-jobs
+project_ID: "PRJ-2025-001"
 date: 2025-02-13
 lastUpdated: 2026-01-14
 tags:
   - AI
   - DataAnalysis
-  - "#BusinessIntelligence"
+  - BusinessIntelligence
 status: Production
-briefing: "[[HUMANITARIAN JOBS DASHBOARD briefing]]"
+briefing: 
 link: https://baena.ai/demos/reliefjobs-dashboard
 article: https://baena.ai/articles/jobs-relief
 github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
-post: "[Linkedin](https://www.linkedin.com/posts/jbaenanet_humanitariantech-dataanalysis-reliefweb-activity-7401125392348221440-vGZt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABWDzXkB5OUe7-mhlazcv5nsspWDYSgcmP4)"
+post: https://www.linkedin.com/posts/jbaenanet_humanitariantech-dataanalysis-reliefweb-activity-7401125392348221440-vGZt
+stack:
+  - n8n
+  - Flowise
+  - Metabase
+  - Nuxt 3
+  - PostgreSQL
+  - Supabase
+  - Docker Swarm
+  - ReliefWeb API
 draft: false
 ---
 

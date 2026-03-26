@@ -3,6 +3,7 @@ title: HUMANITARIAN AI AGENT CHAT
 description: An AI powered assistant expert in Humanitarian Affairs
 aliases:
   - 2024-humanitarian-chat-agent
+project_ID: PRJ-2024-001
 date: 2024-10-07
 lastUpdated: 2025-12-16
 tags:
@@ -14,6 +15,7 @@ article: https://baena.ai/articles/chat-agent
 github: https://github.com/Jesus-Baena/2024-humanitarian-chat-agent
 post:
 draft: false
+stack: "[[n8n]]"
 ---
 
 <div class="project-header-meta">

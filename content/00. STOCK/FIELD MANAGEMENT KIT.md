@@ -1,16 +1,29 @@
 ---
-title: "Project COMPASS: A Generic Field Management Toolkit for Humanitarian NGOs"
-description: A generic toolkit for Humanitarian Field Management and Operations.
+title: "Project COMPASS"
+subtitle: "A Generic Field Management Toolkit for Humanitarian NGOs"
+description: "A generic toolkit for humanitarian field management and operations, developed from fourteen years of field experience to help NGOs establish and manage field operations efficiently."
+image: 
+aliases:
+  - field-management-kit
+project_ID: "PRJ-2024-003"
 date: 2024-10-22
 lastUpdated: 2026-02-01
 tags:
   - FieldManagement
+  - Operations
+  - Logistics
+  - Toolkit
+  - NGO
+  - Humanitarian
 status: Ongoing
-briefing:
-link:
-article:
-github:
-post:
+briefing: 
+link: 
+article: 
+github: 
+post: 
+stack: 
+  - [[Nuxt]]
+  - [[Odoo]]
 draft: false
 ---
 

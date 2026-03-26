@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasProperty("project_ID")
+    order:
+      - project_ID
+      - title
+      - aliases
+      - tags
+      - Date
+      - status
+      - stack
+    columnSize:
+      note.tags: 178

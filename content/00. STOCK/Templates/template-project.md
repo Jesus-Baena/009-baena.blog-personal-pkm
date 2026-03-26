@@ -2,8 +2,10 @@
 title: # Project name (will appear as the main heading)
 Subtitle: # Optional subtitle for additional context
 description: # Short 1-2 sentence description for project listing page
-aliases: # Alternative names or project identifiers
+image: # URL to the object store
+aliases: # Alternative name
   - 
+project_ID: # A unique identifier
 date: # Project start date (YYYY-MM-DD)
 lastUpdated: # Last modification date (YYYY-MM-DD)
 tags: # Relevant categories/topics (e.g., AI, DataAnalysis, FieldManagement)
@@ -13,7 +15,8 @@ briefing: # Link to detailed briefing document or internal wiki page
 link: # Live demo/production URL (if available)
 article: # Link to article/blog post about the project
 github: # GitHub repository URL
-post: # Social media post or announcement (can be markdown link)
+post: # Social media post or announcement
+stack: # The list of technnologies used
 draft: false # Set to true to hide from public view
 ---
 

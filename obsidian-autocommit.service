@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=/home/jbi-laptop/Git/009-baena.blog-personal-pkm
-ExecStart=/home/jbi-laptop/Git/009-baena.blog-personal-pkm/auto-commit.sh
-User=jbi-laptop
+WorkingDirectory=/home/jbi/Git/2025-blog-digital-garden
+ExecStart=/home/jbi/Git/2025-blog-digital-garden/auto-commit.sh
+User=jbi
 StandardOutput=append:/tmp/obsidian-autocommit.log
 StandardError=append:/tmp/obsidian-autocommit.log
