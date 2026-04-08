@@ -13,7 +13,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "umami",
+      host: "https://analytics.baena.ai",
+      websiteId: "9a7b84ba-5149-4a51-be57-0e3b390de517",
     },
     locale: "en-US",
     baseUrl: "baena.blog",
