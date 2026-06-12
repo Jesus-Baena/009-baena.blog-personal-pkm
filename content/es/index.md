@@ -1,6 +1,6 @@
 ---
 title: Bienvenido a mi Blog
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2021-07-18
 modified: 2026-02-09
 lang: es-ES
