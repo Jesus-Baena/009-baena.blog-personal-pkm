@@ -2,7 +2,7 @@
 title:  Jefe de Base (P3) con la OIM en la CRISIS DE DESPLAZADOS POR EL ÉBOLA
 draft: 
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

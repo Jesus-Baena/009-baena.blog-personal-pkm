@@ -2,7 +2,7 @@
 title: Mapa de densidad de empleos
 draft:
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-28
 modified: 2026-02-01
 lang: es-ES

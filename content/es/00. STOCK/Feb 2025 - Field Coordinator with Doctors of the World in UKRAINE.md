@@ -2,7 +2,7 @@
 title: Feb 2025 - Coordinador de Terreno con Médicos del Mundo en UCRANIA
 draft: 
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

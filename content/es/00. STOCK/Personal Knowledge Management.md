@@ -2,7 +2,7 @@
 title: Base de conocimiento personal
 draft: false
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-11
 modified: 2026-02-01
 lang: es-ES

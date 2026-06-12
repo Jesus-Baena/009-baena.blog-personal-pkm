@@ -2,7 +2,7 @@
 title: Un sistema personal de copia de seguridad y replicación basado en Git para mi nueva configuración Omarchy
 draft: false
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-10-21
 modified: 2026-02-06
 lang: es-ES

@@ -2,7 +2,7 @@
 title: De Riga a Andalucía sobre dos ruedas
 draft:
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-10-03
 modified: 2025-11-30
 lang: es-ES

@@ -2,7 +2,7 @@
 title: Estructura de la base de datos
 draft:
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

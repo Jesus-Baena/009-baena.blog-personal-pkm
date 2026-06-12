@@ -3,7 +3,7 @@ title: Un recordatorio sobre la soberanía digital
 draft: false
 tags:
   - tech
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-11
 modified: 2025-08-12
 lang: es-ES

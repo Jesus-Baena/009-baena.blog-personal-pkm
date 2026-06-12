@@ -2,7 +2,7 @@
 title: Jun 2022 - Coordinador de Terreno con el International Rescue Committee en UCRANIA
 draft: 
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

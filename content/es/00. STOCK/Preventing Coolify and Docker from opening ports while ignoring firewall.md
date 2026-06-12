@@ -2,7 +2,7 @@
 title: Evitar que Coolify y Docker abran puertos ignorando el cortafuegos
 draft:
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-18
 modified: 2026-02-03
 lang: es-ES
