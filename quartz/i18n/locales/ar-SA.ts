@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "أُنشئ باستخدام",
+      emailTitle: "أرسل لي بريدًا إلكترونيًا",
     },
     graph: {
       title: "التمثيل التفاعلي",
+      globalGraph: "التمثيل الشامل",
+    },
+    breadcrumbs: {
+      home: "الرئيسية",
+    },
+    langSwitcher: {
+      switchTo: "تغيير اللغة",
+      english: "الإنجليزية",
+      spanish: "الإسبانية",
+    },
+    propertyMeta: {
+      header: "الخصائص",
+      empty: "فارغ",
+      description: "الوصف",
+      lastUpdated: "lastUpdated",
+      tags: "الوسوم",
+      status: "الحالة",
+      link: "رابط",
+      article: "مقالة",
+      github: "github",
+      post: "منشور",
     },
     recentNotes: {
       title: "آخر الملاحظات",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "بحث",
       searchBarPlaceholder: "ابحث عن شيء ما",
+      noResults: "لا توجد نتائج.",
     },
     tableOfContents: {
       title: "فهرس المحتويات",

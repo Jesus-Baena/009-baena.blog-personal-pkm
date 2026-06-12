@@ -8,7 +8,7 @@ import { clone } from "../util/clone"
 import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
-import { i18n } from "../i18n"
+import { i18n, getEffectiveLocale } from "../i18n"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -69,6 +69,7 @@ function renderTranscludes(
   slug: FullSlug,
   componentData: QuartzComponentProps,
 ) {
+  const locale = getEffectiveLocale(cfg.locale, componentData.fileData.frontmatter?.lang)
   // process transcludes in componentData
   visit(root, "element", (node, _index, _parent) => {
     if (node.tagName === "blockquote") {
@@ -103,7 +104,7 @@ function renderTranscludes(
                 tagName: "a",
                 properties: { href: inner.properties?.href, class: ["internal", "transclude-src"] },
                 children: [
-                  { type: "text", value: i18n(cfg.locale).components.transcludes.linkToOriginal },
+                  { type: "text", value: i18n(locale).components.transcludes.linkToOriginal },
                 ],
               },
             ]
@@ -146,7 +147,7 @@ function renderTranscludes(
               tagName: "a",
               properties: { href: inner.properties?.href, class: ["internal", "transclude-src"] },
               children: [
-                { type: "text", value: i18n(cfg.locale).components.transcludes.linkToOriginal },
+                { type: "text", value: i18n(locale).components.transcludes.linkToOriginal },
               ],
             },
           ]
@@ -162,7 +163,7 @@ function renderTranscludes(
                   type: "text",
                   value:
                     page.frontmatter?.title ??
-                    i18n(cfg.locale).components.transcludes.transcludeOf({
+                    i18n(locale).components.transcludes.transcludeOf({
                       targetSlug: page.slug!,
                     }),
                 },
@@ -176,7 +177,7 @@ function renderTranscludes(
               tagName: "a",
               properties: { href: inner.properties?.href, class: ["internal", "transclude-src"] },
               children: [
-                { type: "text", value: i18n(cfg.locale).components.transcludes.linkToOriginal },
+                { type: "text", value: i18n(locale).components.transcludes.linkToOriginal },
               ],
             },
           ]

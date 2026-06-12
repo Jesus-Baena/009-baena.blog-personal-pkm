@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Được tạo bởi",
+      emailTitle: "Gửi email cho tôi",
     },
     graph: {
       title: "Biểu Đồ",
+      globalGraph: "Biểu Đồ Tổng Thể",
+    },
+    breadcrumbs: {
+      home: "Trang chủ",
+    },
+    langSwitcher: {
+      switchTo: "Đổi ngôn ngữ",
+      english: "Tiếng Anh",
+      spanish: "Tiếng Tây Ban Nha",
+    },
+    propertyMeta: {
+      header: "THUỘC TÍNH",
+      empty: "Trống",
+      description: "mô tả",
+      lastUpdated: "lastUpdated",
+      tags: "thẻ",
+      status: "trạng thái",
+      link: "liên kết",
+      article: "bài viết",
+      github: "github",
+      post: "bài đăng",
     },
     recentNotes: {
       title: "Bài viết gần đây",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Tìm Kiếm",
       searchBarPlaceholder: "Tìm kiếm thông tin",
+      noResults: "Không có kết quả.",
     },
     tableOfContents: {
       title: "Bảng Nội Dung",

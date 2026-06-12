@@ -174,7 +174,21 @@ async function setupExplorer(currentSlug: FullSlug) {
 
     const data = await fetchData
     const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
-    const trie = FileTrieNode.fromEntries(entries)
+    let trie = FileTrieNode.fromEntries(entries)
+
+    // Bilingual: only show the current language's subtree. Spanish content lives
+    // under the `es/` slug prefix; everything else is treated as the default language.
+    const isSpanishPage = currentSlug === "es" || currentSlug.startsWith("es/")
+    if (isSpanishPage) {
+      // Re-root the explorer at the `es` folder so Spanish notes appear at the top level.
+      const esNode = trie.children.find((c) => c.isFolder && c.slugSegment === "es")
+      if (esNode) {
+        trie = esNode
+      }
+    } else {
+      // Hide the entire Spanish subtree on default-language pages.
+      trie.filter((node) => !(node.isFolder && node.slugSegment === "es"))
+    }
 
     // Apply functions in order
     for (const fn of opts.order) {

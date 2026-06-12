@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Şununla oluşturuldu",
+      emailTitle: "Bana e-posta gönder",
     },
     graph: {
       title: "Grafik Görünümü",
+      globalGraph: "Genel Grafik",
+    },
+    breadcrumbs: {
+      home: "Ana Sayfa",
+    },
+    langSwitcher: {
+      switchTo: "Dili değiştir",
+      english: "İngilizce",
+      spanish: "İspanyolca",
+    },
+    propertyMeta: {
+      header: "ÖZELLİKLER",
+      empty: "Boş",
+      description: "açıklama",
+      lastUpdated: "lastUpdated",
+      tags: "etiketler",
+      status: "durum",
+      link: "bağlantı",
+      article: "makale",
+      github: "github",
+      post: "gönderi",
     },
     recentNotes: {
       title: "Son Notlar",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Arama",
       searchBarPlaceholder: "Bir şey arayın",
+      noResults: "Sonuç bulunamadı.",
     },
     tableOfContents: {
       title: "İçindekiler",

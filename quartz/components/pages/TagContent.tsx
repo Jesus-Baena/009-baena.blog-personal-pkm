@@ -5,7 +5,7 @@ import { FullSlug, getAllSegmentPrefixes, resolveRelative, simplifySlug } from "
 import { QuartzPluginData } from "../../plugins/vfile"
 import { Root } from "hast"
 import { htmlToJsx } from "../../util/jsx"
-import { i18n } from "../../i18n"
+import { i18n, getEffectiveLocale } from "../../i18n"
 import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 
@@ -23,6 +23,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
 
   const TagContent: QuartzComponent = (props: QuartzComponentProps) => {
     const { tree, fileData, allFiles, cfg } = props
+    const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
     const slug = fileData.slug
 
     if (!(slug?.startsWith("tags/") || slug === "tags")) {
@@ -57,7 +58,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
           <article class={classes}>
             <p>{content}</p>
           </article>
-          <p>{i18n(cfg.locale).pages.tagContent.totalTags({ count: tags.length })}</p>
+          <p>{i18n(locale).pages.tagContent.totalTags({ count: tags.length })}</p>
           <div>
             {tags.map((tag) => {
               const pages = tagItemMap.get(tag)!
@@ -87,12 +88,12 @@ export default ((opts?: Partial<TagContentOptions>) => {
                   {content && <p>{content}</p>}
                   <div class="page-listing">
                     <p>
-                      {i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}
+                      {i18n(locale).pages.tagContent.itemsUnderTag({ count: pages.length })}
                       {pages.length > options.numPages && (
                         <>
                           {" "}
                           <span>
-                            {i18n(cfg.locale).pages.tagContent.showingFirst({
+                            {i18n(locale).pages.tagContent.showingFirst({
                               count: options.numPages,
                             })}
                           </span>
@@ -118,7 +119,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
         <div class="popover-hint">
           <article class={classes}>{content}</article>
           <div class="page-listing">
-            <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
+            <p>{i18n(locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
             <div>
               <PageList {...listProps} sort={options?.sort} />
             </div>

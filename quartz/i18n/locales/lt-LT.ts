@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Sukurta Su",
+      emailTitle: "Parašykite man el. laišką",
     },
     graph: {
       title: "Grafiko Vaizdas",
+      globalGraph: "Bendras Grafikas",
+    },
+    breadcrumbs: {
+      home: "Pradžia",
+    },
+    langSwitcher: {
+      switchTo: "Keisti kalbą",
+      english: "Anglų",
+      spanish: "Ispanų",
+    },
+    propertyMeta: {
+      header: "SAVYBĖS",
+      empty: "Tuščia",
+      description: "aprašymas",
+      lastUpdated: "lastUpdated",
+      tags: "žymos",
+      status: "būsena",
+      link: "nuoroda",
+      article: "straipsnis",
+      github: "github",
+      post: "įrašas",
     },
     recentNotes: {
       title: "Naujausi Užrašai",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Paieška",
       searchBarPlaceholder: "Ieškoti",
+      noResults: "Rezultatų nėra.",
     },
     tableOfContents: {
       title: "Turinys",

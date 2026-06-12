@@ -26,6 +26,7 @@ import { FilePath, pathToRoot, slugTag, slugifyFilePath } from "../../util/path"
 import { toHast } from "mdast-util-to-hast"
 import { toHtml } from "hast-util-to-html"
 import { capitalize } from "../../util/lang"
+import { i18n, getEffectiveLocale, ValidCallout } from "../../i18n"
 import { PluggableList } from "unified"
 
 export interface Options {
@@ -414,6 +415,11 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
       if (opts.callouts) {
         plugins.push(() => {
           return (tree: Root, _file) => {
+            const locale = getEffectiveLocale(
+              ctx.cfg.configuration.locale,
+              _file.data.frontmatter?.lang,
+            )
+            const calloutTranslations = i18n(locale).components.callout
             visit(tree, "blockquote", (node) => {
               if (node.children.length === 0) {
                 return
@@ -444,7 +450,9 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                     {
                       type: "text",
                       value: useDefaultTitle
-                        ? capitalize(typeString).replace(/-/g, " ")
+                        ? calloutType in calloutTranslations
+                          ? calloutTranslations[calloutType as ValidCallout]
+                          : capitalize(typeString).replace(/-/g, " ")
                         : titleContent + " ",
                     },
                     ...restOfTitle,

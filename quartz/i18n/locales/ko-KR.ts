@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Created with",
+      emailTitle: "이메일 보내기",
     },
     graph: {
       title: "그래프 뷰",
+      globalGraph: "전체 그래프",
+    },
+    breadcrumbs: {
+      home: "홈",
+    },
+    langSwitcher: {
+      switchTo: "언어 변경",
+      english: "영어",
+      spanish: "스페인어",
+    },
+    propertyMeta: {
+      header: "속성",
+      empty: "없음",
+      description: "설명",
+      lastUpdated: "lastUpdated",
+      tags: "태그",
+      status: "상태",
+      link: "링크",
+      article: "글",
+      github: "github",
+      post: "게시글",
     },
     recentNotes: {
       title: "최근 게시글",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "검색",
       searchBarPlaceholder: "검색어를 입력하세요",
+      noResults: "결과가 없습니다.",
     },
     tableOfContents: {
       title: "목차",

@@ -3,6 +3,7 @@ import breadcrumbsStyle from "./styles/breadcrumbs.scss"
 import { FullSlug, SimpleSlug, resolveRelative, simplifySlug } from "../util/path"
 import { classNames } from "../util/lang"
 import { trieFromAllFiles } from "../util/ctx"
+import { i18n, getEffectiveLocale } from "../i18n"
 
 type CrumbData = {
   displayName: string
@@ -15,9 +16,9 @@ interface BreadcrumbOptions {
    */
   spacerSymbol: string
   /**
-   * Name of first crumb
+   * Name of first crumb. When omitted, falls back to the localized "Home" label.
    */
-  rootName: string
+  rootName?: string
   /**
    * Whether to look up frontmatter title for folders (could cause performance problems with big vaults)
    */
@@ -30,7 +31,6 @@ interface BreadcrumbOptions {
 
 const defaultOptions: BreadcrumbOptions = {
   spacerSymbol: "❯",
-  rootName: "Home",
   resolveFrontmatterTitle: true,
   showCurrentPage: true,
 }
@@ -49,6 +49,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     allFiles,
     displayClass,
     ctx,
+    cfg,
   }: QuartzComponentProps) => {
     const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
     const slugParts = fileData.slug!.split("/")
@@ -58,10 +59,13 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       return null
     }
 
+    const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
+    const rootName = options.rootName ?? i18n(locale).components.breadcrumbs.home
+
     const crumbs: CrumbData[] = pathNodes.map((node, idx) => {
       const crumb = formatCrumb(node.displayName, fileData.slug!, simplifySlug(node.slug))
       if (idx === 0) {
-        crumb.displayName = options.rootName
+        crumb.displayName = rootName
       }
 
       // For last node (current page), set empty path

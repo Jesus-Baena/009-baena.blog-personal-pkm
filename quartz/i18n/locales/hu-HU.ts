@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Készítve ezzel:",
+      emailTitle: "Küldj nekem egy e-mailt",
     },
     graph: {
       title: "Grafikonnézet",
+      globalGraph: "Teljes grafikon",
+    },
+    breadcrumbs: {
+      home: "Kezdőlap",
+    },
+    langSwitcher: {
+      switchTo: "Nyelv váltása",
+      english: "Angol",
+      spanish: "Spanyol",
+    },
+    propertyMeta: {
+      header: "TULAJDONSÁGOK",
+      empty: "Üres",
+      description: "leírás",
+      lastUpdated: "lastUpdated",
+      tags: "címkék",
+      status: "állapot",
+      link: "hivatkozás",
+      article: "cikk",
+      github: "github",
+      post: "bejegyzés",
     },
     recentNotes: {
       title: "Legutóbbi jegyzetek",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Keresés",
       searchBarPlaceholder: "Keress valamire",
+      noResults: "Nincs találat.",
     },
     tableOfContents: {
       title: "Tartalomjegyzék",

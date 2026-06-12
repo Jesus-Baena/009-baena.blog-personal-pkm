@@ -84,3 +84,23 @@ export const defaultTranslation = "en-US"
 export const i18n = (locale: ValidLocale): Translation => TRANSLATIONS[locale ?? defaultTranslation]
 export type ValidLocale = keyof typeof TRANSLATIONS
 export type ValidCallout = keyof CalloutTranslation
+
+/**
+ * Resolves the effective locale for a single page. Quartz only has one global
+ * `locale`, but for a bilingual site each page may declare its own language via
+ * the `lang` frontmatter field (e.g. `lang: es-ES` or `lang: es`). This maps that
+ * field onto a `ValidLocale`, falling back to the global locale when absent/unknown.
+ */
+export function getEffectiveLocale(globalLocale: ValidLocale, lang?: string): ValidLocale {
+  if (lang) {
+    // exact match (e.g. "es-ES")
+    if (lang in TRANSLATIONS) return lang as ValidLocale
+    // language-only match (e.g. "es" -> "es-ES", "en" -> "en-US")
+    const language = lang.split("-")[0]
+    const match = (Object.keys(TRANSLATIONS) as ValidLocale[]).find(
+      (l) => l.split("-")[0] === language,
+    )
+    if (match) return match
+  }
+  return globalLocale ?? defaultTranslation
+}

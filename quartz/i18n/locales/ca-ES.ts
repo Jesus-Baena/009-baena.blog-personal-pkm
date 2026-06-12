@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Creat amb",
+      emailTitle: "Envia'm un correu",
     },
     graph: {
       title: "Vista Gràfica",
+      globalGraph: "Graf Global",
+    },
+    breadcrumbs: {
+      home: "Inici",
+    },
+    langSwitcher: {
+      switchTo: "Canviar idioma",
+      english: "Anglès",
+      spanish: "Espanyol",
+    },
+    propertyMeta: {
+      header: "PROPIETATS",
+      empty: "Buit",
+      description: "descripció",
+      lastUpdated: "lastUpdated",
+      tags: "etiquetes",
+      status: "estat",
+      link: "enllaç",
+      article: "article",
+      github: "github",
+      post: "publicació",
     },
     recentNotes: {
       title: "Notes Recents",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Cercar",
       searchBarPlaceholder: "Cerca alguna cosa",
+      noResults: "Sense resultats.",
     },
     tableOfContents: {
       title: "Taula de Continguts",

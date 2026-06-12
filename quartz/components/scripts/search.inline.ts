@@ -158,6 +158,8 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
   const searchLayout = searchElement.querySelector(".search-layout") as HTMLElement
   if (!searchLayout) return
 
+  const noResultsText = (searchElement as HTMLElement).dataset.noResults ?? "No results."
+
   const idDataMap = Object.keys(data) as FullSlug[]
   const appendLayout = (el: HTMLElement) => {
     searchLayout.appendChild(el)
@@ -333,7 +335,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     removeAllChildren(results)
     if (finalResults.length === 0) {
       results.innerHTML = `<a class="result-card no-match">
-          <h3>No results.</h3>
+          <h3>${noResultsText}</h3>
           <p>Try another search term?</p>
       </a>`
     } else {

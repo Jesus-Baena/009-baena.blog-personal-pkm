@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Créé avec",
+      emailTitle: "Envoyez-moi un e-mail",
     },
     graph: {
       title: "Vue Graphique",
+      globalGraph: "Graphe Global",
+    },
+    breadcrumbs: {
+      home: "Accueil",
+    },
+    langSwitcher: {
+      switchTo: "Changer de langue",
+      english: "Anglais",
+      spanish: "Espagnol",
+    },
+    propertyMeta: {
+      header: "PROPRIÉTÉS",
+      empty: "Vide",
+      description: "description",
+      lastUpdated: "lastUpdated",
+      tags: "étiquettes",
+      status: "statut",
+      link: "lien",
+      article: "article",
+      github: "github",
+      post: "article",
     },
     recentNotes: {
       title: "Notes Récentes",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Recherche",
       searchBarPlaceholder: "Rechercher quelque chose",
+      noResults: "Aucun résultat.",
     },
     tableOfContents: {
       title: "Table des Matières",

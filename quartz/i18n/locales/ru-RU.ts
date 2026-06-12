@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Создано с помощью",
+      emailTitle: "Напишите мне на почту",
     },
     graph: {
       title: "Вид графа",
+      globalGraph: "Глобальный граф",
+    },
+    breadcrumbs: {
+      home: "Главная",
+    },
+    langSwitcher: {
+      switchTo: "Сменить язык",
+      english: "Английский",
+      spanish: "Испанский",
+    },
+    propertyMeta: {
+      header: "СВОЙСТВА",
+      empty: "Пусто",
+      description: "описание",
+      lastUpdated: "lastUpdated",
+      tags: "теги",
+      status: "статус",
+      link: "ссылка",
+      article: "статья",
+      github: "github",
+      post: "запись",
     },
     recentNotes: {
       title: "Недавние заметки",
@@ -53,6 +75,7 @@ export default {
     search: {
       title: "Поиск",
       searchBarPlaceholder: "Найти что-нибудь",
+      noResults: "Ничего не найдено.",
     },
     tableOfContents: {
       title: "Оглавление",

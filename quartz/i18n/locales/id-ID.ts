@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Dibuat dengan",
+      emailTitle: "Kirimi saya email",
     },
     graph: {
       title: "Tampilan Grafik",
+      globalGraph: "Grafik Global",
+    },
+    breadcrumbs: {
+      home: "Beranda",
+    },
+    langSwitcher: {
+      switchTo: "Ganti bahasa",
+      english: "Inggris",
+      spanish: "Spanyol",
+    },
+    propertyMeta: {
+      header: "PROPERTI",
+      empty: "Kosong",
+      description: "deskripsi",
+      lastUpdated: "lastUpdated",
+      tags: "tag",
+      status: "status",
+      link: "tautan",
+      article: "artikel",
+      github: "github",
+      post: "kiriman",
     },
     recentNotes: {
       title: "Catatan Terbaru",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Cari",
       searchBarPlaceholder: "Cari sesuatu",
+      noResults: "Tidak ada hasil.",
     },
     tableOfContents: {
       title: "Daftar Isi",

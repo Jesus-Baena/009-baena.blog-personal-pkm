@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "作成",
+      emailTitle: "メールを送る",
     },
     graph: {
       title: "グラフビュー",
+      globalGraph: "全体グラフ",
+    },
+    breadcrumbs: {
+      home: "ホーム",
+    },
+    langSwitcher: {
+      switchTo: "言語を切り替える",
+      english: "英語",
+      spanish: "スペイン語",
+    },
+    propertyMeta: {
+      header: "プロパティ",
+      empty: "なし",
+      description: "説明",
+      lastUpdated: "lastUpdated",
+      tags: "タグ",
+      status: "ステータス",
+      link: "リンク",
+      article: "記事",
+      github: "github",
+      post: "投稿",
     },
     recentNotes: {
       title: "最近の記事",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "検索",
       searchBarPlaceholder: "検索ワードを入力",
+      noResults: "結果がありません。",
     },
     tableOfContents: {
       title: "目次",

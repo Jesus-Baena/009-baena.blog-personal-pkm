@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Created with",
+      emailTitle: "寄信給我",
     },
     graph: {
       title: "關係圖譜",
+      globalGraph: "全域關係圖譜",
+    },
+    breadcrumbs: {
+      home: "首頁",
+    },
+    langSwitcher: {
+      switchTo: "切換語言",
+      english: "英語",
+      spanish: "西班牙語",
+    },
+    propertyMeta: {
+      header: "屬性",
+      empty: "空",
+      description: "描述",
+      lastUpdated: "lastUpdated",
+      tags: "標籤",
+      status: "狀態",
+      link: "連結",
+      article: "文章",
+      github: "github",
+      post: "貼文",
     },
     recentNotes: {
       title: "最近的筆記",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "搜尋",
       searchBarPlaceholder: "搜尋些什麼",
+      noResults: "無結果。",
     },
     tableOfContents: {
       title: "目錄",

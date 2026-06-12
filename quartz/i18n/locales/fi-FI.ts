@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Luotu käyttäen",
+      emailTitle: "Lähetä minulle sähköpostia",
     },
     graph: {
       title: "Verkkonäkymä",
+      globalGraph: "Koko verkko",
+    },
+    breadcrumbs: {
+      home: "Etusivu",
+    },
+    langSwitcher: {
+      switchTo: "Vaihda kieltä",
+      english: "Englanti",
+      spanish: "Espanja",
+    },
+    propertyMeta: {
+      header: "OMINAISUUDET",
+      empty: "Tyhjä",
+      description: "kuvaus",
+      lastUpdated: "lastUpdated",
+      tags: "tunnisteet",
+      status: "tila",
+      link: "linkki",
+      article: "artikkeli",
+      github: "github",
+      post: "julkaisu",
     },
     recentNotes: {
       title: "Viimeisimmät muistiinpanot",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Haku",
       searchBarPlaceholder: "Hae jotain",
+      noResults: "Ei tuloksia.",
     },
     tableOfContents: {
       title: "Sisällysluettelo",

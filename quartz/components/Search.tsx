@@ -3,7 +3,7 @@ import style from "./styles/search.scss"
 // @ts-ignore
 import script from "./scripts/search.inline"
 import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
+import { i18n, getEffectiveLocale } from "../i18n"
 
 export interface SearchOptions {
   enablePreview: boolean
@@ -14,13 +14,17 @@ const defaultOptions: SearchOptions = {
 }
 
 export default ((userOpts?: Partial<SearchOptions>) => {
-  const Search: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Search: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     const opts = { ...defaultOptions, ...userOpts }
-    const searchPlaceholder = i18n(cfg.locale).components.search.searchBarPlaceholder
+    const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
+    const searchPlaceholder = i18n(locale).components.search.searchBarPlaceholder
     return (
-      <div class={classNames(displayClass, "search")}>
+      <div
+        class={classNames(displayClass, "search")}
+        data-no-results={i18n(locale).components.search.noResults}
+      >
         <button class="search-button">
-          <p>{i18n(cfg.locale).components.search.title}</p>
+          <p>{i18n(locale).components.search.title}</p>
           <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
             <title>Search</title>
             <g class="search-path" fill="none">

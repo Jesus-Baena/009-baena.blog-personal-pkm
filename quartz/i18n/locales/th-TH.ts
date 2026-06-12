@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "สร้างด้วย",
+      emailTitle: "ส่งอีเมลถึงฉัน",
     },
     graph: {
       title: "มุมมองกราฟ",
+      globalGraph: "กราฟทั้งหมด",
+    },
+    breadcrumbs: {
+      home: "หน้าแรก",
+    },
+    langSwitcher: {
+      switchTo: "เปลี่ยนภาษา",
+      english: "อังกฤษ",
+      spanish: "สเปน",
+    },
+    propertyMeta: {
+      header: "คุณสมบัติ",
+      empty: "ว่าง",
+      description: "คำอธิบาย",
+      lastUpdated: "lastUpdated",
+      tags: "แท็ก",
+      status: "สถานะ",
+      link: "ลิงก์",
+      article: "บทความ",
+      github: "github",
+      post: "โพสต์",
     },
     recentNotes: {
       title: "บันทึกล่าสุด",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "ค้นหา",
       searchBarPlaceholder: "ค้นหาบางอย่าง",
+      noResults: "ไม่พบผลลัพธ์",
     },
     tableOfContents: {
       title: "สารบัญ",

@@ -37,6 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
+        { Component: Component.LangSwitcher() },
       ],
     }),
     Component.Explorer({
@@ -83,6 +84,7 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.LangSwitcher() },
       ],
     }),
     Component.Explorer({

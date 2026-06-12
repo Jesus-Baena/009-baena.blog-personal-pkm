@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "ساخته شده با",
+      emailTitle: "برای من ایمیل بفرستید",
     },
     graph: {
       title: "نمای گراف",
+      globalGraph: "گراف کلی",
+    },
+    breadcrumbs: {
+      home: "خانه",
+    },
+    langSwitcher: {
+      switchTo: "تغییر زبان",
+      english: "انگلیسی",
+      spanish: "اسپانیایی",
+    },
+    propertyMeta: {
+      header: "ویژگی‌ها",
+      empty: "خالی",
+      description: "توضیحات",
+      lastUpdated: "lastUpdated",
+      tags: "برچسب‌ها",
+      status: "وضعیت",
+      link: "پیوند",
+      article: "مقاله",
+      github: "github",
+      post: "نوشته",
     },
     recentNotes: {
       title: "یادداشت‌های اخیر",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "جستجو",
       searchBarPlaceholder: "مطلبی را جستجو کنید",
+      noResults: "نتیجه‌ای یافت نشد.",
     },
     tableOfContents: {
       title: "فهرست",
