@@ -36,10 +36,32 @@ export default {
       title: "Explorer",
     },
     footer: {
-  createdWith: "Created by Jesus Baena with Quartz v4.5.1 © 2025",
+      createdWith: "Created by Jesus Baena with Quartz v4.5.1 © 2025",
+      emailTitle: "Send me an email",
     },
     graph: {
       title: "Graph View",
+      globalGraph: "Global Graph",
+    },
+    breadcrumbs: {
+      home: "Home",
+    },
+    langSwitcher: {
+      switchTo: "Switch language",
+      english: "English",
+      spanish: "Spanish",
+    },
+    propertyMeta: {
+      header: "PROPERTIES",
+      empty: "Empty",
+      description: "description",
+      lastUpdated: "lastUpdated",
+      tags: "tags",
+      status: "status",
+      link: "link",
+      article: "article",
+      github: "github",
+      post: "post",
     },
     recentNotes: {
       title: "Recent Notes",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Search",
       searchBarPlaceholder: "Search for something",
+      noResults: "No results.",
     },
     tableOfContents: {
       title: "Table of Contents",

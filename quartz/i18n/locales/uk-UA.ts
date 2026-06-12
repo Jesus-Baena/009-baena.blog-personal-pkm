@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Створено за допомогою",
+      emailTitle: "Напишіть мені електронного листа",
     },
     graph: {
       title: "Вигляд графа",
+      globalGraph: "Загальний граф",
+    },
+    breadcrumbs: {
+      home: "Головна",
+    },
+    langSwitcher: {
+      switchTo: "Змінити мову",
+      english: "Англійська",
+      spanish: "Іспанська",
+    },
+    propertyMeta: {
+      header: "ВЛАСТИВОСТІ",
+      empty: "Порожньо",
+      description: "опис",
+      lastUpdated: "lastUpdated",
+      tags: "мітки",
+      status: "статус",
+      link: "посилання",
+      article: "стаття",
+      github: "github",
+      post: "допис",
     },
     recentNotes: {
       title: "Останні нотатки",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Пошук",
       searchBarPlaceholder: "Шукати щось",
+      noResults: "Немає результатів.",
     },
     tableOfContents: {
       title: "Зміст",

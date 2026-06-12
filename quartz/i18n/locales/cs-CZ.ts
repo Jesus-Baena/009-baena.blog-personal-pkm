@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Vytvořeno pomocí",
+      emailTitle: "Napište mi e-mail",
     },
     graph: {
       title: "Graf",
+      globalGraph: "Globální graf",
+    },
+    breadcrumbs: {
+      home: "Domů",
+    },
+    langSwitcher: {
+      switchTo: "Změnit jazyk",
+      english: "Angličtina",
+      spanish: "Španělština",
+    },
+    propertyMeta: {
+      header: "VLASTNOSTI",
+      empty: "Prázdné",
+      description: "popis",
+      lastUpdated: "lastUpdated",
+      tags: "tagy",
+      status: "stav",
+      link: "odkaz",
+      article: "článek",
+      github: "github",
+      post: "příspěvek",
     },
     recentNotes: {
       title: "Nejnovější poznámky",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Hledat",
       searchBarPlaceholder: "Hledejte něco",
+      noResults: "Žádné výsledky.",
     },
     tableOfContents: {
       title: "Obsah",

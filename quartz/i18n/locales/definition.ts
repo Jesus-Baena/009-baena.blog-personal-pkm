@@ -39,9 +39,31 @@ export interface Translation {
     }
     footer: {
       createdWith: string
+      emailTitle: string
     }
     graph: {
       title: string
+      globalGraph: string
+    }
+    breadcrumbs: {
+      home: string
+    }
+    langSwitcher: {
+      switchTo: string
+      english: string
+      spanish: string
+    }
+    propertyMeta: {
+      header: string
+      empty: string
+      description: string
+      lastUpdated: string
+      tags: string
+      status: string
+      link: string
+      article: string
+      github: string
+      post: string
     }
     recentNotes: {
       title: string
@@ -54,6 +76,7 @@ export interface Translation {
     search: {
       title: string
       searchBarPlaceholder: string
+      noResults: string
     }
     tableOfContents: {
       title: string

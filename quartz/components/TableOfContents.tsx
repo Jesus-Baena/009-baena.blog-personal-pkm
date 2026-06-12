@@ -5,7 +5,7 @@ import { classNames } from "../util/lang"
 
 // @ts-ignore
 import script from "./scripts/toc.inline"
-import { i18n } from "../i18n"
+import { i18n, getEffectiveLocale } from "../i18n"
 import OverflowListFactory from "./OverflowList"
 import { concatenateResources } from "../util/resources"
 
@@ -30,6 +30,7 @@ export default ((opts?: Partial<Options>) => {
       return null
     }
 
+    const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
     const id = `toc-${numTocs++}`
     return (
       <div class={classNames(displayClass, "toc")}>
@@ -39,7 +40,7 @@ export default ((opts?: Partial<Options>) => {
           aria-controls={id}
           aria-expanded={!fileData.collapseToc}
         >
-          <h3>{i18n(cfg.locale).components.tableOfContents.title}</h3>
+          <h3>{i18n(locale).components.tableOfContents.title}</h3>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -78,10 +79,11 @@ export default ((opts?: Partial<Options>) => {
     if (!fileData.toc) {
       return null
     }
+    const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
     return (
       <details class="toc" open={!fileData.collapseToc}>
         <summary>
-          <h3>{i18n(cfg.locale).components.tableOfContents.title}</h3>
+          <h3>{i18n(locale).components.tableOfContents.title}</h3>
         </summary>
         <ul>
           {fileData.toc.map((tocEntry) => (

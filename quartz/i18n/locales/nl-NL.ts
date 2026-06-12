@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Gemaakt met",
+      emailTitle: "Stuur me een e-mail",
     },
     graph: {
       title: "Grafiekweergave",
+      globalGraph: "Globale grafiek",
+    },
+    breadcrumbs: {
+      home: "Start",
+    },
+    langSwitcher: {
+      switchTo: "Taal wijzigen",
+      english: "Engels",
+      spanish: "Spaans",
+    },
+    propertyMeta: {
+      header: "EIGENSCHAPPEN",
+      empty: "Leeg",
+      description: "beschrijving",
+      lastUpdated: "lastUpdated",
+      tags: "labels",
+      status: "status",
+      link: "link",
+      article: "artikel",
+      github: "github",
+      post: "bericht",
     },
     recentNotes: {
       title: "Recente notities",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Zoeken",
       searchBarPlaceholder: "Doorzoek de website",
+      noResults: "Geen resultaten.",
     },
     tableOfContents: {
       title: "Inhoudsopgave",

@@ -1,52 +1,67 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { Date as DateComponent, getDate } from "./Date"
+import { i18n, getEffectiveLocale } from "../i18n"
 
 const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzComponentProps) => {
+  const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
+  const t = i18n(locale).components.propertyMeta
   const frontmatter = fileData.frontmatter
-  const description = frontmatter?.description
-  const status = frontmatter?.status
-  const link = frontmatter?.link
-  const article = frontmatter?.article
-  const github = frontmatter?.github
-  const post = frontmatter?.post
-  const lastUpdated = frontmatter?.lastUpdated
+  const description = frontmatter?.description as string | undefined
+  const status = frontmatter?.status as string | undefined
+  const link = frontmatter?.link as string | undefined
+  const article = frontmatter?.article as string | undefined
+  const github = frontmatter?.github as string | undefined
+  const post = frontmatter?.post as string | undefined
+  const lastUpdated = frontmatter?.lastUpdated as string | undefined
   const tags = frontmatter?.tags
 
   // Only show if at least one project property exists
-  if (!description && !status && !link && !article && !github && !post && !lastUpdated && (!tags || tags.length === 0)) {
+  if (
+    !description &&
+    !status &&
+    !link &&
+    !article &&
+    !github &&
+    !post &&
+    !lastUpdated &&
+    (!tags || tags.length === 0)
+  ) {
     return null
   }
 
   return (
     <div class={classNames(displayClass, "project-meta")}>
-      <div class="project-meta-header">PROPERTIES</div>
+      <div class="project-meta-header">{t.header}</div>
       <div class="project-meta-table">
         <div class="project-meta-row">
           <div class="project-meta-label">
-            <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 3.5h11v1h-11v-1zm0 3h11v1h-11v-1zm0 3h11v1h-11v-1zm0 3h11v1h-11v-1z"></path></svg>
-            <span>description</span>
+            <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+              <path d="M2.5 3.5h11v1h-11v-1zm0 3h11v1h-11v-1zm0 3h11v1h-11v-1zm0 3h11v1h-11v-1z"></path>
+            </svg>
+            <span>{t.description}</span>
           </div>
-          <div class="project-meta-value">{description || "Empty"}</div>
+          <div class="project-meta-value">{description || t.empty}</div>
         </div>
 
         {lastUpdated && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM8 13a5 5 0 110-10 5 5 0 010 10zm.5-8v3.793l2.646 2.647-.707.707L7.5 9.207V5h1z"></path></svg>
-              <span>lastUpdated</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM8 13a5 5 0 110-10 5 5 0 010 10zm.5-8v3.793l2.646 2.647-.707.707L7.5 9.207V5h1z"></path>
+              </svg>
+              <span>{t.lastUpdated}</span>
             </div>
-            <div class="project-meta-value project-date">
-              📅 {lastUpdated}
-            </div>
+            <div class="project-meta-value project-date">📅 {lastUpdated}</div>
           </div>
         )}
 
         {tags && tags.length > 0 && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M2 4.5l6-2.5 6 2.5v7l-6 2.5-6-2.5v-7zm1 .72v5.56l5 2.08v-5.56l-5-2.08zm6 7.64l5-2.08V5.22l-5 2.08v5.56z"></path></svg>
-              <span>tags</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M2 4.5l6-2.5 6 2.5v7l-6 2.5-6-2.5v-7zm1 .72v5.56l5 2.08v-5.56l-5-2.08zm6 7.64l5-2.08V5.22l-5 2.08v5.56z"></path>
+              </svg>
+              <span>{t.tags}</span>
             </div>
             <div class="project-meta-value project-tags">
               {tags.map((tag: string) => (
@@ -59,8 +74,10 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
         {status && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM8 13a5 5 0 110-10 5 5 0 010 10z"></path></svg>
-              <span>status</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM8 13a5 5 0 110-10 5 5 0 010 10z"></path>
+              </svg>
+              <span>{t.status}</span>
             </div>
             <div class="project-meta-value">{status}</div>
           </div>
@@ -69,11 +86,15 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
         {link && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path></svg>
-              <span>link</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
+              </svg>
+              <span>{t.link}</span>
             </div>
             <div class="project-meta-value">
-              <a href={link} class="project-link-url" target="_blank" rel="noopener noreferrer">{link} ↗</a>
+              <a href={link} class="project-link-url" target="_blank" rel="noopener noreferrer">
+                {link} ↗
+              </a>
             </div>
           </div>
         )}
@@ -81,11 +102,15 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
         {article && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path></svg>
-              <span>article</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
+              </svg>
+              <span>{t.article}</span>
             </div>
             <div class="project-meta-value">
-              <a href={article} class="project-link-url" target="_blank" rel="noopener noreferrer">{article} ↗</a>
+              <a href={article} class="project-link-url" target="_blank" rel="noopener noreferrer">
+                {article} ↗
+              </a>
             </div>
           </div>
         )}
@@ -93,11 +118,15 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
         {github && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path></svg>
-              <span>github</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
+              </svg>
+              <span>{t.github}</span>
             </div>
             <div class="project-meta-value">
-              <a href={github} class="project-link-url" target="_blank" rel="noopener noreferrer">{github} ↗</a>
+              <a href={github} class="project-link-url" target="_blank" rel="noopener noreferrer">
+                {github} ↗
+              </a>
             </div>
           </div>
         )}
@@ -105,8 +134,10 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
         {post && (
           <div class="project-meta-row">
             <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path></svg>
-              <span>post</span>
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
+                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
+              </svg>
+              <span>{t.post}</span>
             </div>
             <div class="project-meta-value">
               {(() => {
@@ -114,9 +145,27 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
                 const match = post.match(markdownLinkRegex)
                 if (match) {
                   const [_, text, url] = match
-                  return <a href={url} class="project-link-url" target="_blank" rel="noopener noreferrer">{text} ↗</a>
-                } else if (post.startsWith('http')) {
-                  return <a href={post} class="project-link-url" target="_blank" rel="noopener noreferrer">{post} ↗</a>
+                  return (
+                    <a
+                      href={url}
+                      class="project-link-url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {text} ↗
+                    </a>
+                  )
+                } else if (post.startsWith("http")) {
+                  return (
+                    <a
+                      href={post}
+                      class="project-link-url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {post} ↗
+                    </a>
+                  )
                 } else {
                   return post
                 }

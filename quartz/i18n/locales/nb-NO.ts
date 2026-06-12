@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Laget med",
+      emailTitle: "Send meg en e-post",
     },
     graph: {
       title: "Graf-visning",
+      globalGraph: "Global graf",
+    },
+    breadcrumbs: {
+      home: "Hjem",
+    },
+    langSwitcher: {
+      switchTo: "Bytt språk",
+      english: "Engelsk",
+      spanish: "Spansk",
+    },
+    propertyMeta: {
+      header: "EGENSKAPER",
+      empty: "Tom",
+      description: "beskrivelse",
+      lastUpdated: "lastUpdated",
+      tags: "tagger",
+      status: "status",
+      link: "lenke",
+      article: "artikkel",
+      github: "github",
+      post: "innlegg",
     },
     recentNotes: {
       title: "Nylige notater",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Søk",
       searchBarPlaceholder: "Søk etter noe",
+      noResults: "Ingen resultater.",
     },
     tableOfContents: {
       title: "Oversikt",

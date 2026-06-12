@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Created with",
+      emailTitle: "给我发邮件",
     },
     graph: {
       title: "关系图谱",
+      globalGraph: "全局关系图谱",
+    },
+    breadcrumbs: {
+      home: "首页",
+    },
+    langSwitcher: {
+      switchTo: "切换语言",
+      english: "英语",
+      spanish: "西班牙语",
+    },
+    propertyMeta: {
+      header: "属性",
+      empty: "空",
+      description: "描述",
+      lastUpdated: "lastUpdated",
+      tags: "标签",
+      status: "状态",
+      link: "链接",
+      article: "文章",
+      github: "github",
+      post: "帖子",
     },
     recentNotes: {
       title: "最近的笔记",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "搜索",
       searchBarPlaceholder: "搜索些什么",
+      noResults: "无结果。",
     },
     tableOfContents: {
       title: "目录",

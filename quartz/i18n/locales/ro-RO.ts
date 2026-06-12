@@ -37,9 +37,31 @@ export default {
     },
     footer: {
       createdWith: "Creat cu",
+      emailTitle: "Trimite-mi un e-mail",
     },
     graph: {
       title: "Graf",
+      globalGraph: "Graf global",
+    },
+    breadcrumbs: {
+      home: "Acasă",
+    },
+    langSwitcher: {
+      switchTo: "Schimbă limba",
+      english: "Engleză",
+      spanish: "Spaniolă",
+    },
+    propertyMeta: {
+      header: "PROPRIETĂȚI",
+      empty: "Gol",
+      description: "descriere",
+      lastUpdated: "lastUpdated",
+      tags: "etichete",
+      status: "stare",
+      link: "legătură",
+      article: "articol",
+      github: "github",
+      post: "articol",
     },
     recentNotes: {
       title: "Notițe recente",
@@ -52,6 +74,7 @@ export default {
     search: {
       title: "Căutare",
       searchBarPlaceholder: "Introduceți termenul de căutare...",
+      noResults: "Niciun rezultat.",
     },
     tableOfContents: {
       title: "Cuprins",

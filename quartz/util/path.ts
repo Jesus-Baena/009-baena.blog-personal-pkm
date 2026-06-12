@@ -238,11 +238,24 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
 
     if (opts.strategy === "shortest") {
       // if the file name is unique, then it's just the filename
-      const matchingFileNames = opts.allSlugs.filter((slug) => {
+      let matchingFileNames = opts.allSlugs.filter((slug) => {
         const parts = slug.split("/")
         const fileName = parts.at(-1)
         return targetCanonical === fileName
       })
+
+      // Bilingual: when a basename exists in both languages, prefer the counterpart
+      // in the same language subtree as the source. Spanish content lives under `es/`.
+      // Falls back to the other language if no same-language match exists.
+      if (matchingFileNames.length > 1) {
+        const srcInEs = src.startsWith("es/")
+        const sameLang = matchingFileNames.filter((slug) =>
+          srcInEs ? slug.startsWith("es/") : !slug.startsWith("es/"),
+        )
+        if (sameLang.length > 0) {
+          matchingFileNames = sameLang
+        }
+      }
 
       // only match, just use it
       if (matchingFileNames.length === 1) {
