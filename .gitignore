@@ -14,3 +14,6 @@ replit.nix
 .env
 .env.*
 !.env.example
+
+# Local notes (not tracked)
+PENDING-i18n.md
